@@ -1,0 +1,72 @@
+/* styles.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
+  background-color: #eaf4ec;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('misty.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(40, 60, 40, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: #f0ffe0;
+  text-shadow: 0 0 10px #6fbf73;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #e0f5e9;
+  text-shadow: 0 0 5px #6fbf73;
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #6fbf73;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+  background-color: #5aa85f;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
